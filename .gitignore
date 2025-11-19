@@ -1,0 +1,6 @@
+manifest.json
+extension-chrome.zip
+node_modules
+dist
+aikey.txt
+.vscode

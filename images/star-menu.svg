@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="seid-star-icon" viewBox="0 0 120 120" aria-hidden="true">
+        <path fill="#ffcf5a" d="M60 10l14.4 29.2 32.2 4.7-23.3 22.7 5.5 32.1L60 86.5 31.2 98.7l5.5-32.1L13.4 43.9l32.2-4.7L60 10z"/>
+        <rect x="45" y="50" width="30" height="9" rx="4" fill="#111"/>
+        <rect x="48" y="63" width="24" height="9" rx="4" fill="#111"/>
+        <rect x="52" y="76" width="16" height="9" rx="4" fill="#111"/>
+      </svg>

@@ -1,0 +1,59 @@
+{
+	"manifest_version": 3,
+	"name": "seid+",
+	"description": "Substitui as tabelas do SEI por uma grid inteligente, com informações adicionais e filtragem, favoritos e validação de processos.",
+	"version": "1.1",
+	"author": "thborges@ufj.edu.br",
+	"icons": {
+		"128": "images/seidmais-128.png"
+	},
+	"browser_specific_settings": {
+	  "gecko": {
+		"id": "{4D25DE43-4AF7-45C3-B2E7-6795C2C87375}"
+	  }
+	},
+	"content_scripts": [{
+		"css": [
+			"css/seidmais.css"
+		],
+		"js": [
+			"scripts/marked.min.js",
+			"scripts/jquery-3.6.1.min.js",
+			"scripts/ag-grid-community.min.js",
+			"scripts/ag-grid-locale.js",
+			"scripts/utils.js",
+			"scripts/my-favorites.js",
+			"scripts/ai.js",
+			"scripts/validation.js",
+			"scripts/content-filters.js",
+			"scripts/content.js"
+		],
+		"matches": [
+			"https://sei.ufj.edu.br/*",
+			"https://sei.treinamento.unb.br/*"
+		]
+	}],
+	"web_accessible_resources": [{
+		"resources": [
+			"pdfjs/pdf.min.mjs",
+			"pdfjs/pdf.worker.min.mjs",
+			"images/envelope-open.svg",
+			"images/envelope-closed.svg",
+			"images/plane-arrival.svg",
+			"images/lock.svg",
+			"images/house.svg",
+			"images/star-add.svg",
+			"images/star-download.svg",
+			"images/star-open.svg",
+			"images/star-menu.svg",
+			"images/seidmais-128.png",
+			"images/waiting.gif",
+			"images/ai.png",
+			"images/add.svg"
+		],
+		"matches": [
+			"https://sei.ufj.edu.br/*",
+			"https://sei.treinamento.unb.br/*"
+		]
+	}]
+}

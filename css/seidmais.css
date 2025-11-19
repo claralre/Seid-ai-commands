@@ -1,0 +1,492 @@
+
+#divInfraBarraSistemaLinha {
+    height: unset !important;
+}
+
+#divInfraBarraLocalizacao {
+    display: none;
+}
+
+#divComandos {
+    box-shadow: none;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+#divFiltro {
+    margin: 5px 0 5px 0 !important;
+}
+
+.infraAreaTabela>table.tabelaControle {
+    border: 1px solid rgba(221, 221, 221, 0.78);
+}
+
+.infraAreaTabela>table.tabelaControle tr {
+    border: 1px solid rgba(221, 221, 221, 0.78);
+}
+
+#tblProcessosRecebidos, #tblProcessosGerados {
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+    margin: 5px;
+}
+
+tr th.infraTh {
+    border-top: unset;
+    border-bottom: unset;
+}
+
+caption.infraCaption {
+    border-bottom: unset !important;
+}
+
+tbody>tr.infraTrSelecionada, tbody>tr.infraTrSelecionada td, tbody>td.infraTdSelecionada {
+    background-color: color-mix(in oklab, var(--infra-esquema-cor-clara), white 50%) !important;
+}
+
+img.sdmicon {
+    width: 20px !important;
+    vertical-align: sub !important;
+}
+
+#aggrid {
+    height: 300px;
+    display: block;
+}
+
+.ag-header-cell-text {
+  font-weight: bold !important;
+}
+
+.ag-cell img, .ag-cell img.imagemStatus {
+    vertical-align: middle;
+}
+
+.ag-row-pinned, .ag-header-row {
+    background-color: #eee !important;
+}
+
+.ag-row-pinned {
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-size: 32px 32px;
+}
+
+.origem-filter {
+    padding: 10px;
+    display: inline-grid;
+}
+
+#divTabelaProcesso.hidden-force {
+  display: none !important;
+}
+
+#frmProcedimentoControlar {
+    height: unset !important;
+}
+
+.flags-filter {
+    padding: 10px;
+}
+
+.flags-filter > label > img {
+    vertical-align: middle;
+    width: 20px;
+    padding-left: 5px;
+}
+
+.flags-filter > label > input {
+    vertical-align: middle;
+}
+
+.seidmais-icon {
+    width: 20px;
+    padding-right: 5px;
+}
+
+.seidmais-marker {
+    width: 24px;
+    padding-right: 5px;
+}
+
+#seidmais-favorites-row-menu {
+    display: none;
+    position: absolute;
+    z-index:1000;
+    background: #eee;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+#seidmais-favorites-row-menu div {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.menu-item:hover {
+    background-color: rgba(240, 247, 253);
+}
+
+#seidmais-divider {
+    cursor: col-resize;
+}
+
+#seidmais-sidepanel {
+    width: 300px;
+    display: none;
+    font-size: 10pt;
+}
+
+#sidepanel-buttons {
+    background-color: #ddd;
+    padding: 2px;
+}
+
+#sidepanel-buttons div {
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#sidepanel-buttons div.active {
+    background-color: rgba(240, 247, 253);
+}
+
+#kb-content {
+    flex: 1;
+    overflow-y: auto;
+    height: 100%;
+}
+
+#ai-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#ai-chat-history {
+    flex: 1;
+    overflow-y: auto;
+    padding: 5px;
+    font-size: 10pt;
+}
+
+#ai-chat-history div.user {
+    text-align: right;
+    margin: 5px 0 5px 0;
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+}
+
+#ai-chat-history div.assistant {
+    padding: 0 5px;
+}
+
+#ai-chat-history div.assistant img {
+    width: 20px;
+    display: inline-block;
+}
+
+#ai-chat-history div.assistant p {
+    margin-bottom: 5px;
+}
+
+#ai-chat-history div.assistant h4 {
+    font-size: 14px;
+}
+
+#ai-chat-history div.assistant h3 {
+    font-size: 16px;
+}
+
+#ai-chat-history div.assistant ol, #ai-chat-history div.assistant ul {
+    padding-inline-start: 15px;
+}
+
+#ai-chat-history div.error {
+    color: red;
+}
+
+#ai-chat-history table {
+  border-collapse: collapse;
+}
+
+#ai-chat-history th, #ai-chat-history td {
+  border: 1px solid #ccc;
+  padding: 0.6em 1em;
+}
+
+#ai-chat-history th {
+  background-color: #e4e4e4;
+  font-weight: 600;
+}
+
+#ai-chat-bottom {
+    border-radius: 10px;
+    margin: 5px;
+    margin-bottom: 5px;
+    background-color: aliceblue;
+    border: 1px solid rgb(110 156 223);
+}
+
+#ai-chat-input {
+    min-height: 40px;
+    max-height: 150px;
+    padding: 10px;
+    overflow-y: scroll;
+    outline: none;
+}
+
+#ai-chat-input:empty:before {
+    content: attr(data-placeholder);
+    color: #888;
+    pointer-events: none;
+}
+
+.ai-chat-input-var {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 4px;
+}
+
+.ai-chat-input-var label {
+    width: 30%;
+    margin-right: 4px;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.ai-chat-input-var input {
+    width: 70%;
+    min-width: 0;
+    border: 1px solid #c9cccf;
+    border-top-color: #aeb3b9;
+    outline: 0;
+}
+
+#ai-chat-tools {
+    padding-left: 5px;
+}
+
+#ai-menu-container {
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+#ai-menu-container ul {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 5px;
+    margin: 0;
+    list-style: none;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+#ai-menu-container ul li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#waitingai::before {
+  content: '';
+  display: block;
+}
+
+.sdm-vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.sdm-flex-column {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: anchor-center;
+}
+
+.divLinha { /* repeated here to apply in sidePanel, document editor */
+    background-image: url(imagens/barra_redimensionamento.gif);
+    background-repeat: repeat-y;
+    background-position: left;
+    padding-left: 6px;
+}
+
+#sidePanelContainer {
+    display: flex;
+    border-top: 1px solid #b6b6b6;
+    border-bottom: 1px solid #b6b6b6;
+}
+
+/* === Estrela fixa no canto inferior esquerdo === */
+.seid-corner-slot {
+  position: absolute;
+  right: 8px !important;     /* canto DIREITO */
+  top: 8px !important;       /* canto SUPERIOR */
+  z-index: 99998;
+  pointer-events: auto;
+}
+
+
+.seid-corner-btn {
+  display: inline-flex;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.seid-corner-btn:focus {
+  outline: 2px solid #ffd166;
+  outline-offset: 2px;
+  border-radius: .5rem;
+}
+
+.seid-star-icon {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+/* ====== Menu da estrela: layout organizado ====== */
+.seid-filter-overlay{
+  position: fixed;
+  min-width: 260px;
+  max-width: 320px;
+  border: 1px solid #d0d5dd;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.10);
+  padding: 6px;
+  z-index: 10050; /* acima dos popups da grid */
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.seid-filter-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.seid-filter-item:hover{
+  background: #f5f7fb;
+}
+
+.seid-filter-item[data-action="save"]{
+  font-weight: 700;
+  background: #f9fafb;
+  cursor: pointer;
+}
+
+.seid-filter-group{
+  border-top: 1px solid #eee;
+  margin-top: 6px;
+  padding-top: 6px;
+  max-height: 280px;   /* rolagem se tiver muitos filtros */
+  overflow-y: auto;
+}
+
+.seid-filter-name{
+  flex: 1;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.seid-filter-actions{
+  display: inline-flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* Links de ação “renomear / excluir” */
+.seid-filter-link{
+  font-size: 12px;
+  color: #444;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Marca visual do filtro aplicado (opcional) */
+.seid-filter-item.active .seid-filter-name::before{
+  content: "★ ";
+  color: #f5b800;
+}
+
+/*parte nova do CSS*/
+.seid-corner-slot {
+  position: absolute;
+  right: 8px !important;     /* canto DIREITO */
+  top: 8px !important;       /* canto SUPERIOR */
+  z-index: 99998;
+  pointer-events: auto;
+}
+
+.seid-corner-btn { background:#fff; border:1px solid #dadada; border-radius:10px; padding:.35rem; cursor:pointer; box-shadow:0 2px 8px rgba(0,0,0,.08); }
+.seid-star-icon { width:22px; height:22px; display:block; }
+
+.seid-filter-overlay { position:fixed; z-index:9999; min-width:280px; max-width:360px; background:#fff; border:1px solid #e3e3e3; border-radius:10px; box-shadow:0 12px 30px rgba(0,0,0,.12); padding:.5rem; }
+.seid-filter-item { padding:.45rem .6rem; cursor:pointer; border-radius:8px; }
+.seid-filter-item:hover { background:#f7f7f7; }
+.seid-filter-group { max-height:50vh; overflow:auto; margin-top:.25rem; }
+.seid-filter-name { font-weight:500; }
+.seid-filter-actions { float:right; opacity:.7; font-size:.9em; }
+.seid-filter-link { margin-left:.6rem; text-decoration:underline; }
+.seid-filter-empty { color:#888; padding:.4rem .6rem; }
+
+
+/* === SEID FIXED STAR BUTTON === */
+#seid-star-fixed,
+.seid-fixed-star-btn {
+  position: sticky;
+  right: 8px;
+  top: 8px;
+  z-index: 10;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #f1c40f;
+  transition: transform 0.2s, color 0.2s;
+}
+.seid-fixed-star-btn:hover {
+  color: #f39c12;
+  transform: scale(1.2);
+}
+
+/* Espaço reservado à direita da coluna 'Especificação' para o botão estrela */
+.ag-header-cell[col-id="especificacao"], .ag-cell[col-id="especificacao"] {
+    /* reduz um pouco a largura visual sem quebrar layout */
+    max-width: calc(100% - 60px);
+}
+
+/* slot que ficará alinhado à direita da coluna especificacao */
+.seid-corner-slot{
+    pointer-events: auto;
+}
+
+/* Esconder o handle de redimensionamento na borda direita da coluna especificacao */
+.ag-header-cell[col-id="especificacao"] .ag-header-cell-resize {
+    display: none !important;
+}
+
+/* coluna invisível que reserva espaço para o slot da estrela */
+.ag-header-cell[col-id="_slot_space"], .ag-cell[col-id="_slot_space"]{
+    background: transparent !important;
+    color: transparent !important;
+    pointer-events: none;
+}

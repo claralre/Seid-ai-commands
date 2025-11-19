@@ -1,0 +1,170 @@
+{
+  "name": "get_editor_content",
+  "description": "Obtém o texto do documento em edição, exceto e-mail",
+  "strict": true,
+  "parameters": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {},
+    "required": []
+  }
+}
+
+{
+  "name": "get_kb",
+  "description": "Obtém a base de conhecimento do processo",
+  "strict": true,
+  "parameters": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {},
+    "required": []
+  }
+}
+
+{
+  "name": "get_documents",
+  "description": "Obtém a lista de documentos do processo",
+  "strict": true,
+  "parameters": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {},
+    "required": []
+  }
+}
+
+{
+  "name": "get_document_content",
+  "description": "Obtém o conteúdo de um documento do processo atual",
+  "strict": true,
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "docid": {
+        "type": "integer",
+        "description": "número do documento"
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "docid"
+    ]
+  }
+}
+
+{
+  "name": "get_editor_selected",
+  "description": "Obtém o conteúdo selecionado do documento em edição",
+  "strict": true,
+  "parameters": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {},
+    "required": []
+  }
+}
+
+
+{
+  "name": "editor_replace_text",
+  "description": "Aplica substituições diretas no texto em edição, trocando trechos específicos por novos conteúdos conforme um dicionário fornecido",
+  "strict": false,
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "replacemap": {
+        "type": "object",
+        "description": "Mapa de substituições a serem aplicadas. Cada chave representa o texto original exato no documento, e o valor correspondente é o novo texto que deve substituí-lo",
+        "additionalProperties": {
+          "type": "string"
+        },
+        "minProperties": 1
+      }
+    },
+    "required": [
+      "replacemap"
+    ],
+    "additionalProperties": false
+  }
+}
+
+{
+  "name": "ask_for_var_value",
+  "description": "Indica os nomes das variáveis cujo valor está faltando para que o usuário forneça em um próximo prompt",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "vars": {
+        "type": "array",
+        "description": "Lista dos nomes das variáveis sem valor conhecido",
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1
+      }
+    },
+    "required": ["vars"],
+    "additionalProperties": false
+  }
+}
+
+{
+  "name": "assign_proc_to",
+  "description": "Atribui o processo atual a um responsável.",
+  "strict": true,
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Nome do responsável"
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "name"
+    ]
+  }
+}
+
+{
+  "name": "prepare_email",
+  "description": "Prepara um e-mail para um ou mais destinatários anexando um ou mais documentos do processo",
+  "strict": false,
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "names": {
+        "type": "array",
+        "description": "Lista de nomes dos destinatários",
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1
+      },
+      "subject": {
+        "type": "string",
+        "description": "Assunto"
+      },
+      "content": {
+        "type": "string",
+        "description": "Conteúdo do e-mail"
+      },
+      "docs": {
+        "type": "array",
+        "description": "Lista dos docid dos documentos a anexar no e-mail",
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "subject",
+      "content"
+    ]
+  }
+}
+
