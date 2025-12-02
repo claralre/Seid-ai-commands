@@ -172,8 +172,6 @@ Para cada documento, extraia:
 - Quem incluiu
 - Status de assinatura
 
-Apresente em tabela, sem ícones.
-
 ---
 
 ## 4. HISTÓRICO DE TRAMITAÇÃO
@@ -185,9 +183,6 @@ Para cada movimentação, extraia:
 - Tipo de ação
 - Responsável
 - Observações
-
-Apresente em tabela.
-
 ---
 
 ## 5. IDENTIFICAÇÃO DE BLOQUEIOS
@@ -213,11 +208,6 @@ Procure por:
 
 Se não houver:
 - Indique: "[Prazo regulamentar não especificado no processo]"
-
-Calcule:
-- Tempo decorrido
-- Tempo restante
-- Data limite
 
 ---
 
@@ -261,29 +251,7 @@ Com tabelas e listas, sem ícones.
 - Tabelas quando necessário
 - Negrito para destaque
 - Listas ordenadas para ações
-- Texto claro e técnico
-
----
-
-## EXEMPLO DE RESPOSTA CORRETA
-
-"Documento aguarda assinatura:
-- Tipo: Parecer Técnico
-- Nº SEI: 12345
-- Assinatura de: Professor João Carlos Silva
-- Cargo: Coordenador do Curso
-- Desde: 15/10/2025 (5 dias de espera)"
-
-OU, se faltar informação:
-
-"Documento aguarda assinatura:
-- Tipo: Parecer Técnico
-- Nº SEI: 12345
-- Assinatura de: [Nome do signatário não especificado no processo]
-- Unidade responsável: Coordenação do Curso
-- Recomenda-se verificar com a unidade
-- Desde: 15/10/2025 (5 dias de espera)"
-
+- Texto claro e técnico 
 
 Analise o processo fornecido seguindo rigorosamente todas estas instruções.`
   }
